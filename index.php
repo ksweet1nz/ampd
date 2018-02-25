@@ -9,15 +9,17 @@
 
   <title></title>
 
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
-
+  <?php perch_layout('global.nav'); ?>
+  <main>
+    <?php perch_content('Intro'); ?>
+  </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
-  <?php perch_content('Intro'); ?>
+
 </body>
 
 </html>
