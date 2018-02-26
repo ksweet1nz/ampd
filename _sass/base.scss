@@ -143,3 +143,34 @@ nav {
     }
   }
 }
+
+// Project Page
+.project-article {
+  border: 8px solid $nav-font-color;
+  padding: 20px 40px;
+  margin-bottom: 6em;
+  box-shadow: 2px 3px 6px lighten($nav-font-color, 30%);
+}
+.project-article p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+.project-article h3 {
+  font-size: .85em;
+  font-weight: 100;
+}
+
+.project-article a {
+  color: $popColor;
+  text-decoration: none;
+  transition: all 100ms ease;
+}
+
+.project-article a:hover {
+  color: darken($popColor, 30%);
+  text-decoration: none;
+}
+
+.project-date, .project-duration {
+  font-size: .75em;
+}
