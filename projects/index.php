@@ -1,18 +1,18 @@
-<?php include('admin/runtime.php'); ?>
+<?php include('../admin/runtime.php'); ?>
 <!doctype html>
 <html lang="en">
 
 <?php perch_layout('global.head', [
-  'title' => 'Home',
+  'title' => 'Projects',
 ]); ?>
 
 <body>
   <?php perch_layout('global.nav'); ?>
   <main>
-    <?php perch_content('Intro'); ?>
+    <?php perch_content('Projects'); ?>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/navmenu.js"></script>
+  <script src="/js/navmenu.js"></script>
 
 </body>
 
