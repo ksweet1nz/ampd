@@ -1,5 +1,5 @@
 <?php
-    define('PERCH_LICENSE_KEY', 'P3-LOCAL-KAW180-ZTB225-EMP024');
+    define('PERCH_LICENSE_KEY', 'P3-LOCAL-NPU180-PGF226-NFH024');
 
     define("PERCH_DB_USERNAME", 'user');
     define("PERCH_DB_PASSWORD", 'password');
