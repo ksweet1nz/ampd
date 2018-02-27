@@ -18,7 +18,7 @@
   <main>
     <img src="/images/AMPD_Logo.svg" />
     <?php perch_content('Intro'); ?>
-
+        <?php PerchUtil::output_debug(); ?>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/navmenu.js"></script>

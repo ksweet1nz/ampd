@@ -36,9 +36,14 @@ body {
 
 main {
   margin: 0 20%;
-  padding-top: 15vh;
+  padding-top: 30vh;
 }
 
+@media all and (min-width: $breakpoint) {
+  main {
+    padding-top: 15vh;
+  }
+}
 
 // navigation
 .navigation {
@@ -64,7 +69,6 @@ nav {
       a {
         display: block;
         padding: 0 20px;
-        line-height: $nav-height;
         color: $nav-font-color;
         text-decoration: none;
         font-size: 1.5em;
@@ -73,12 +77,26 @@ nav {
           border: 8px solid $nav-font-color;
         }
         &:not(:only-child):after {
+          padding-left: 4px;
+          content: ' ▾';
         }
       } // Dropdown list
+      ul li {
+        min-width: 190px;
+        a {
+          padding: 15px;
+        }
+      }
     }
   }
 }
 
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
 .nav-mobile {
   display: none;
   position: absolute;
@@ -95,7 +113,7 @@ nav {
 }
   nav {
     width: 100%;
-    padding: 100px 0 15px;
+    padding: 150px 0 15px;
     ul {
       display: none;
       li {

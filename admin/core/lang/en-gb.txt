@@ -383,5 +383,10 @@
     "Enforce bucket restrictions on content": "Enforce bucket restrictions on content",
     "Move the page to this location": "Move the page to this location",
     "Subpage folder": "Subpage folder",
-    "Markdown formatting": "Markdown formatting"
+    "Markdown formatting": "Markdown formatting",
+    "Remove image": "Remove image",
+    "%s%s is up to date%s": "%s%s is up to date%s",
+    "%sThere are PHP files in your resources folder.%s These could be dangerous and a sign of a security breach.": "%sThere are PHP files in your resources folder.%s These could be dangerous and a sign of a security breach.",
+    "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:": "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:",
+    "Do that now, then reload this page. Don't use %scarbonara%s.": "Do that now, then reload this page. Don't use %scarbonara%s."
 }

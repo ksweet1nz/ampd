@@ -6,7 +6,7 @@
     define("PERCH_DB_SERVER", "localhost");
     define("PERCH_DB_DATABASE", "ampd");
     define("PERCH_DB_PREFIX", "perch3_");
-    
+
     define('PERCH_TZ', 'UTC');
 
     define('PERCH_EMAIL_FROM', 'kevin.sweet.nz@gmail.com');
@@ -18,5 +18,6 @@
 
     define('PERCH_RESFILEPATH', PERCH_PATH . DIRECTORY_SEPARATOR . 'resources');
     define('PERCH_RESPATH', PERCH_LOGINPATH . '/resources');
-    
+
     define('PERCH_HTML5', true);
+    define('PERCH_DEBUG', true);
