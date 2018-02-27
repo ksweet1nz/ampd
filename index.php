@@ -7,9 +7,18 @@
 ]); ?>
 
 <body>
-  <?php perch_layout('global.nav'); ?>
+  <section class="navigation">
+    <div class="nav-container">
+        <div class="brand">
+          <?php perch_layout('global.logo'); ?>
+        </div>
+    </div>
+    <?php perch_layout('global.nav'); ?>
+  </section>
   <main>
+    <img src="/images/AMPD_Logo.svg" />
     <?php perch_content('Intro'); ?>
+
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/navmenu.js"></script>

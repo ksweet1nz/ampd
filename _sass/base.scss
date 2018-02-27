@@ -39,6 +39,19 @@ main {
   padding-top: 15vh;
 }
 
+
+// navigation
+.navigation {
+  height: 10vh;
+}
+.nav-container {
+  margin: 0 auto;
+}
+.brand {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 20px;
+}
 nav {
   float: right;
   ul {
@@ -82,7 +95,7 @@ nav {
 }
   nav {
     width: 100%;
-    padding: $nav-height 0 15px;
+    padding: 100px 0 15px;
     ul {
       display: none;
       li {
@@ -161,14 +174,15 @@ nav {
 }
 
 .project-article a {
-  color: $popColor;
+  color: lighten($popColor, 20%);
   text-decoration: none;
   transition: all 100ms ease;
 }
 
 .project-article a:hover {
-  color: darken($popColor, 30%);
+  color: $popColor;
   text-decoration: none;
+  font-weight: 300;
 }
 
 .project-date, .project-duration {

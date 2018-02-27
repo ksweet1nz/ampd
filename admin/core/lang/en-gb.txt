@@ -382,5 +382,6 @@
     "Skip region list for just one region": "Skip region list for just one region",
     "Enforce bucket restrictions on content": "Enforce bucket restrictions on content",
     "Move the page to this location": "Move the page to this location",
-    "Subpage folder": "Subpage folder"
+    "Subpage folder": "Subpage folder",
+    "Markdown formatting": "Markdown formatting"
 }
