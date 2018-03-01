@@ -36,14 +36,9 @@ body {
 
 main {
   margin: 0 20%;
-  padding-top: 30vh;
+  padding-top: 10vh;
 }
 
-@media all and (min-width: $breakpoint) {
-  main {
-    padding-top: 15vh;
-  }
-}
 
 // navigation
 .navigation {
@@ -57,6 +52,7 @@ main {
   padding-top: 10px;
   padding-left: 20px;
 }
+
 nav {
   float: right;
   ul {
@@ -66,25 +62,30 @@ nav {
     li {
       float: left;
       position: relative;
-      a {
+      font-size: 1.5em;
+      a,
+      a:visited {
         display: block;
         padding: 0 20px;
+        line-height: $nav-height;
         color: $nav-font-color;
         text-decoration: none;
-        font-size: 1.5em;
         border: 8px solid $white;
+
         &:hover {
-          border: 8px solid $nav-font-color;
+          border: 8px solid $nav-background;
         }
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
+          color: $link-hover-color;
         }
       } // Dropdown list
       ul li {
         min-width: 190px;
         a {
           padding: 15px;
+          line-height: 20px;
         }
       }
     }
@@ -94,31 +95,33 @@ nav {
 .nav-dropdown {
   position: absolute;
   z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   display: none;
+  li {
+    font-size: .8em;
+  }
 }
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 0;
-  background: $white;
+  color: $nav-background;
   height: $nav-height;
   width: $nav-height;
 }
-
-@media only screen and (max-width: $breakpoint) {
-.nav-mobile {
-  display: block;
-}
+@media only screen and (max-width: 798px) {
+  // Hamburger nav visible on mobile only
+  .nav-mobile {
+    display: block;
+  }
   nav {
-    width: 100%;
-    padding: 150px 0 15px;
+   width: 100%;
+    padding: $nav-height 0 15px;
     ul {
       display: none;
       li {
         float: none;
-        a{
+        a {
           padding: 15px;
           line-height: 20px;
         }
@@ -128,13 +131,15 @@ nav {
       }
     }
   }
+  .nav-dropdown {
+    position: static;
+  }
 }
-@media only screen and (min-width: $breakpoint) {
+@media screen and (min-width: $breakpoint) {
   .nav-list {
     display: block !important;
   }
 }
-
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -181,6 +186,7 @@ nav {
   padding: 20px 40px;
   margin-bottom: 6em;
   box-shadow: 2px 3px 6px lighten($nav-font-color, 30%);
+  display: inline-block;
 }
 .project-article p, h2, h3 {
   margin: 0;

@@ -11,12 +11,13 @@
     <ul class="nav-list">
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="/projects/">Projects</a></li>
+      <li><a href="#!">Projects</a>
         <ul class="nav-dropdown">
-          <li><a href="#!">Current</a></li>
-          <li><a href="#!">Gallery</a></li>
+          <li><a href="/projects/">Current</a></li>
+          <li><a href="#!">Archive</a></li>
         </ul>
-      <li><a href="/members/">Members</a></li>
+      </li>
+      <li><a href="#!">Members</a></li>
     </ul>
   </nav>
 </section>
