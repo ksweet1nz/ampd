@@ -17,7 +17,7 @@
           <li><a href="#!">Archive</a></li>
         </ul>
       </li>
-      <li><a href="#!">Members</a></li>
+      <li><a href="/members/">Members</a></li>
     </ul>
   </nav>
 </section>

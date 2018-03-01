@@ -2,20 +2,28 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
-  'title' => 'Member Login',
+  'title' => 'Member Profile',
 ]); ?>
-
 <body>
 	<?php perch_layout('global.topofpage'); ?>
 	<main>
+
+
+		<div class="project-article">
 		<?php
 			if (perch_member_logged_in()) {
-				echo '<h3>Welcome back, '.perch_member_get('first_name').'.</h3>';
+ 				echo '<h2>Hi, '.perch_member_get('first_name').'!</h2> This is your profile';
+				perch_member_form('profile.html');
+
+				echo '<h3>Update your password</h3>';
+				perch_member_form('password.html');
 			}else{
-				echo '<h2>AMPD Member Login</h2>';
-				echo '<p>You are not logged in. Please login or <a href="/members/register.php">register</a>.</p>';
+				echo '<a href="/members/">Please log in</a>';
 			}
+
 		?>
+	</div>
+	<div>
 			<?php
 				if (perch_member_logged_in()) {
 			?>
@@ -23,11 +31,14 @@
 					<li><a href="profile.php">Edit profile</a></li>
 					<li><a href="logout.php">Log out</a></li>
 				</ul>
+
 			<?php
 				}else{
 					perch_members_login_form();
 				}
 			?>
-	</main>
+		</div>
+
+			</main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php include('../admin/runtime.php'); ?>
+<?php include('../perch/runtime.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,13 +19,13 @@
 			?>
 		</nav>
 	</header>
-
+	
 	<div class="wrapper cols2-nav-right">
-
+	
 		<div class="primary-content">
-	<?php
+	<?php 
 		if (perch_member_logged_in()) {
-			echo '<p>You are already logged in.</p>';
+			echo '<p>You are already logged in.</p>';			
 		}else{
 			echo '<h1>Get a new password</h1>';
 			perch_member_form('reset_password.html');
@@ -33,11 +33,11 @@
 
 	?>
 	</div>
-
+		
 		<nav class="sidebar">
 			<?php
 				if (perch_member_logged_in()) {
-			?>
+			?>	
 				<ul>
 					<li><a href="profile.php">Edit profile</a></li>
 					<li><a href="logout.php">Log out</a></li>
@@ -45,13 +45,13 @@
 
 			<?php
 				}else{
-					perch_members_login_form();
+					perch_members_login_form();	
 				}
 			?>
 		</nav>
-
+		
 	</div>
-
+	
 	<footer class="layout-footer">
 		<div class="wrapper">
 			<ul class="social-links">

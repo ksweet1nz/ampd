@@ -2,30 +2,40 @@
  box-sizing: border-box;
 }
 
+li, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: lighten($popColor, 20%);
+  text-decoration: none;
+  transition: all 100ms ease;
+}
+a:hover {
+  color: $popColor;
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   height: auto;
 }
-
 html {
   font-size: 100%;
   line-height: 1.6;
 }
-
 @media all and (min-width: 450px) {
   html {
     font-size: 112.5%;
     line-height: 1.6;
   }
 }
-
 @media all and (min-width: 1200px) {
   html {
     font-size: 125%;
     line-height: 1.8;
   }
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -33,13 +43,10 @@ body {
   background: $white;
   color: $bodyText;
 }
-
 main {
   margin: 0 20%;
-  padding-top: 10vh;
+  padding-top: 16vh;
 }
-
-
 // navigation
 .navigation {
   height: 10vh;
@@ -52,7 +59,6 @@ main {
   padding-top: 10px;
   padding-left: 20px;
 }
-
 nav {
   float: right;
   ul {
@@ -62,23 +68,21 @@ nav {
     li {
       float: left;
       position: relative;
+      color: $bodyText;
       font-size: 1.5em;
       a,
       a:visited {
         display: block;
         padding: 0 20px;
         line-height: $nav-height;
-        color: $nav-font-color;
+        color: $bodyText;
         text-decoration: none;
         border: 8px solid $white;
-
         &:hover {
-          border: 8px solid $nav-background;
         }
         &:not(:only-child):after {
           padding-left: 4px;
           content: ' ▾';
-          color: $link-hover-color;
         }
       } // Dropdown list
       ul li {
@@ -91,7 +95,6 @@ nav {
     }
   }
 }
-
 .nav-dropdown {
   position: absolute;
   z-index: 1;
@@ -124,6 +127,7 @@ nav {
         a {
           padding: 15px;
           line-height: 20px;
+          color: $bodyText;
         }
         ul li a {
           padding-left: 30px;
@@ -179,7 +183,6 @@ nav {
     }
   }
 }
-
 // Project Page
 .project-article {
   border: 8px solid $nav-font-color;
@@ -196,19 +199,6 @@ nav {
   font-size: .85em;
   font-weight: 100;
 }
-
-.project-article a {
-  color: lighten($popColor, 20%);
-  text-decoration: none;
-  transition: all 100ms ease;
-}
-
-.project-article a:hover {
-  color: $popColor;
-  text-decoration: none;
-  font-weight: 300;
-}
-
 .project-date, .project-duration {
   font-size: .75em;
 }
