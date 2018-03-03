@@ -2,12 +2,14 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
-  'title' => 'About',
+  'title' => 'Contact',
 ]); ?>
 <body>
   <?php perch_layout('global.nav'); ?>
   <main>
-    <?php perch_content('Content'); ?>
+    <?php perch_content('Contact Form'); ?>
+    <?php perch_content('Contact'); ?>
+    <?php perch_content('Map'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
 </body>

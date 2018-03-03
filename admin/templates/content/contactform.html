@@ -1,0 +1,35 @@
+<div class="project-article">
+  <h2><perch:content id="heading" type="text" label="Heading" required="true" /></h2>
+  <perch:form id="form-contact" method="post" app="perch_forms" role="form">
+    <div class="input<perch:error for="name" type="required"> error</perch:error>">
+      <perch:input id="name" type="text" required="true" label="Name" placeholder="Full Name"/>
+      <perch:error for="name" type="required">
+      <p class="about-error">Please enter your name</p>
+      </perch:error>
+  </div>
+  <div class="input<perch:error for="email" type="required"> error</perch:error><perch:error for="email" type="format"> error</perch:error>">
+      <perch:input id="email" class="contact-email" type="email" required="true" label="Email" placeholder="Email"/>
+      <perch:error for="email" type="required">
+      <p class="about-error">Please enter your email address</p>
+      </perch:error>
+      <perch:error for="email" type="format">
+      <p class="about-error">Please enter a valid email address</p>
+      </perch:error>
+  </div>
+  <div class="input<perch:error for="message" type="required"> error</perch:error>">
+      <perch:input id="message" type="textarea" required="true" label="Message" placeholder="Your Message" />
+      <perch:error for="message" type="required">
+      <p class="about-error">Please enter your message</p>
+      </perch:error>
+  </div>
+  <div class="submit">
+  <perch:input type="submit" id="submit" value="Send" class="submit" />
+  </div>
+  <perch:success>
+  <div class="alert success">
+  <perch:content id="success" type="textarea" size="m" label="Thank you message" markdown="true" editor="simplemde" required="true" />
+  </div>
+  </perch:success>
+
+  </perch:form>
+</div>

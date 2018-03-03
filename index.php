@@ -7,12 +7,14 @@
 <body>
   <?php perch_layout('global.topofpage'); ?>
   <main>
-    <img src="/images/AMPD_Logo.svg" />
-    <?php perch_content('Intro'); ?>
+    <?php perch_content('Banner'); ?>
+    <?php perch_blog_custom([
+      'count'      => 10,
+      'template'   => 'ampd_post_in_list.html',
+      'sort'       => 'postDateTime',
+      'sort-order' => 'DESC',
+    ]); ?>
   </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/navmenu.js"></script>
-
+  <?php perch_layout('global.footer'); ?>
 </body>
-
 </html>

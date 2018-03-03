@@ -44,8 +44,29 @@ body {
   color: $bodyText;
 }
 main {
-  margin: 0 20%;
+  margin: 0 15%;
   padding-top: 16vh;
+}
+
+main > img {
+  margin-bottom: 10vh;
+}
+
+footer {
+  font-size: .8em;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+legend {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: bold;
 }
 // navigation
 .navigation {
@@ -79,6 +100,7 @@ nav {
         text-decoration: none;
         border: 8px solid $white;
         &:hover {
+          border: 8px solid $nav-font-color;
         }
         &:not(:only-child):after {
           padding-left: 4px;
@@ -190,6 +212,7 @@ nav {
   margin-bottom: 6em;
   box-shadow: 2px 3px 6px lighten($nav-font-color, 30%);
   display: inline-block;
+  width: 100%;
 }
 .project-article p, h2, h3 {
   margin: 0;
@@ -199,6 +222,19 @@ nav {
   font-size: .85em;
   font-weight: 100;
 }
-.project-date, .project-duration {
+.project-date, .project-duration, .blog-date {
   font-size: .75em;
+}
+.blog-date {
+  text-align: right;
+}
+.blog-category {
+  float: right;
+}
+.cmsmap {
+  border: 1px solid $nav-font-color;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  max-width: auto;
 }

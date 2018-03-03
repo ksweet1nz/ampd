@@ -40,5 +40,6 @@
 		</div>
 
 			</main>
+      <?php perch_layout('global.footer'); ?>
 </body>
 </html>

@@ -10,7 +10,13 @@
     </div>
     <ul class="nav-list">
       <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
+      <li><a href="#!">About</a>
+        <ul class="nav-dropdown">
+          <li><a href="/about/">Facilities</a></li>
+          <li><a href="#!">Partners</a></li>
+          <li><a href="/about/contact.php">Contact</a></li>
+        </ul>
+      </li>
       <li><a href="#!">Projects</a>
         <ul class="nav-dropdown">
           <li><a href="/projects/">Current</a></li>

@@ -1,5 +1,5 @@
 <?php
-    define('PERCH_LICENSE_KEY', 'P3-LOCAL-NPU180-PGF226-NFH024');
+    define('PERCH_LICENSE_KEY', 'P31802-VSN057-KUK686-NJD137-URM027');
 
     define("PERCH_DB_USERNAME", 'user');
     define("PERCH_DB_PASSWORD", 'password');
@@ -20,4 +20,6 @@
     define('PERCH_RESPATH', PERCH_LOGINPATH . '/resources');
 
     define('PERCH_HTML5', true);
+    define('PERCH_GMAPS_API_KEY', 'AIzaSyCK5Vpx-6JbkA48KaJxAeELcppU-bT7Kus');
+    define('PERCH_RWD', true);
     define('PERCH_DEBUG', true);

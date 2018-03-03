@@ -1,0 +1,40 @@
+.member-form {
+  border: 8px solid $nav-font-color;
+  box-shadow: 2px 3px 6px lighten($nav-font-color, 30%);
+  padding: 30px;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  border: 1px solid lighten($nav-font-color, 20%);
+  border-bottom: none;
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover, textarea:hover {
+  background: lighten($popColor, 60%);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+
+.submit > input {
+  border: 1px solid lighten($nav-font-color, 20%);
+}
+
+.contact-email {
+  border-bottom: 1px solid lighten($nav-font-color, 20%);
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid lighten($nav-font-color, 20%);
+  border-top: none;
+}
