@@ -20,7 +20,7 @@
       <li><a href="#!">Projects</a>
         <ul class="nav-dropdown">
           <li><a href="/projects/">Current</a></li>
-          <li><a href="#!">Archive</a></li>
+          <li><a href="/projects/archive.php">Archive</a></li>
         </ul>
       </li>
       <li><a href="/members/">Members</a></li>
