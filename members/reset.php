@@ -6,7 +6,7 @@
   'title' => 'Reset Password',
 ]); ?>
 <body>
-  <?php perch_layout('global.topofpage'); ?>
+  <?php perch_layout('global.header'); ?>
   <main>
   	<?php
   		if (perch_member_logged_in()) {

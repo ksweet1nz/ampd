@@ -5,7 +5,7 @@
   'title' => 'About',
 ]); ?>
 <body>
-  <?php perch_layout('global.nav'); ?>
+  <?php perch_layout('global.header'); ?>
   <main>
     <?php perch_content('Content'); ?>
   </main>

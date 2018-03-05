@@ -37,4 +37,15 @@ textarea {
   width: 100%;
   border: 1px solid lighten($nav-font-color, 20%);
   border-top: none;
+  font-family: $mainFont;
+  padding-left: 20px;
+}
+
+.profile-form {
+  input {
+    border-bottom: 1px solid lighten($nav-font-color, 20%);
+  }
+  .submit > input {
+    border-top: none;
+  }
 }

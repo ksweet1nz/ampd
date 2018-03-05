@@ -1,0 +1,9 @@
+<li>
+  <h2 class="project-title"><a href="<perch:content id="confWeb" type="text" label="Conference Website" />"><perch:content id="confName" type="text" label="Conference Name" required="true" title="true" /></a></h2>
+  <h3><perch:content id="location" type="text" label="Location" required="true" /></h3>
+  <p class="project-date">Abstract Due Date: <perch:content id="abstractdate" type="date" label="Abstract Due Date" format="%d %B %Y" required="true" /></p>
+  <p class="project-date">Paper Due Date: <perch:content id="paperdate" type="date" label="Paper Due Date" format="%d %B %Y" required="true" /></p>
+  <p class="project-date">Conference Start Date: <perch:content id="confstartdate" type="date" label="Conference Start Date" format="%d %B %Y" required="true" /></p>
+  <p class="project-date">Conference End Date: <perch:content id="confenddate" type="date" label="Conference End Date" format="%d %B %Y" required="true" /></p>
+  <perch:content id="body" type="textarea" label="Body" markdown="true" editor="simplemde" imagewidth="800" />
+</li>

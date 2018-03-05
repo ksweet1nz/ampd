@@ -5,11 +5,14 @@
   'title' => 'Member Login',
 ]); ?>
 <body>
-	<?php perch_layout('global.topofpage'); ?>
+	<div class="container">
+	<?php perch_layout('global.header'); ?>
 	<main>
+		<div class="project-article bottom-small">
 		<?php
 			if (perch_member_logged_in()) {
-				echo '<h3>Welcome back, '.perch_member_get('first_name').'.</h3>';
+				echo '<h2>Welcome back, '.perch_member_get('first_name').'.</h2>';
+        echo '<p>What would you like to do today?</p>';
 			}else{
 				echo '<h2>AMPD Member Login</h2>';
 				echo '<p>Members will have access to current project pages and any information that is relevant to on going research but might not be ready for public viewing.</p>';
@@ -19,11 +22,14 @@
 			<?php
 				if (perch_member_logged_in()) {
 			?>
+			</div>
+			<div class="member-menu">
 				<ul>
-					<li><a href="myproject.php">Project Page</a></li>
+					<li><a href="/students/">Projects</a></li>
 					<li><a href="profile.php">Edit profile</a></li>
 					<li><a href="logout.php">Log out</a></li>
 				</ul>
+			</div>
 			<?php
 				}else{
 					perch_members_login_form();
@@ -31,5 +37,6 @@
 			?>
 	</main>
   <?php perch_layout('global.footer'); ?>
+  </div>
 </body>
 </html>

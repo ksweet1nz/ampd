@@ -1,4 +1,4 @@
-<section class="navigation">
+<header class="navigation">
   <div class="nav-container">
     <div class="brand">
       <a href="/"><?php perch_layout('global.logo'); ?></a>
@@ -26,4 +26,4 @@
       <li><a href="/members/">Members</a></li>
     </ul>
   </nav>
-</section>
+</header>

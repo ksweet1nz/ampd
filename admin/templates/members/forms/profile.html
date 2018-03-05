@@ -1,4 +1,4 @@
-<perch:form id="profile" method="post" app="perch_members">
+<perch:form class="profile-form" id="profile" method="post" app="perch_members">
 
 	<div>
 		<perch:label for="first_name">First name</perch:label>
@@ -19,7 +19,7 @@
 		<perch:error for="email" type="format">Please check a your email address</perch:error>
 	</div>
 
-	<div>
+	<div class="submit">
 		<perch:input type="submit" value="Save" />
 		<perch:input type="hidden" id="token" />
 	</div>

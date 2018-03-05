@@ -5,7 +5,7 @@
   'title' => 'Home',
 ]); ?>
 <body>
-  <?php perch_layout('global.topofpage'); ?>
+  <?php perch_layout('global.header'); ?>
   <main>
     <?php perch_content('Banner'); ?>
     <?php perch_blog_custom([
@@ -16,5 +16,6 @@
     ]); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
+  </div>
 </body>
 </html>

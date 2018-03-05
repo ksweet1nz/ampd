@@ -5,10 +5,12 @@
   'title' => 'Projects',
 ]); ?>
 <body>
-  <?php perch_layout('global.nav'); ?>
-  <main>
-    <?php perch_content('Projects'); ?>
-  </main>
-  <?php perch_layout('global.footer'); ?>
+  <div class="container">
+    <?php perch_layout('global.header'); ?>
+    <main>
+      <?php perch_content('Projects'); ?>
+    </main>
+    <?php perch_layout('global.footer'); ?>
+  </div>
 </body>
 </html>

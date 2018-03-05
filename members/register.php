@@ -5,9 +5,9 @@
   'title' => 'Member Registration',
 ]); ?>
 <body>
-  <?php perch_layout('global.topofpage'); ?>
+  <div class="container">
+  <?php perch_layout('global.header'); ?>
 	<main>
-
 	<?php
 		if (perch_member_logged_in()) {
 			echo '<p>You are already logged in.</p>';
@@ -15,9 +15,9 @@
 			echo '<h2>Register for AMPD</h2>';
 			perch_member_form('register.html');
 		}
-
 	?>
 	</main>
 	<?php perch_layout('global.footer'); ?>
+  </div>
 </body>
 </html>
