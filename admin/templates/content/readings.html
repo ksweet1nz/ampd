@@ -1,4 +1,7 @@
 <li>
-  <p><perch:content id="readingAuthor" type="text" label="Author(s)" required="true" title="true" />. (<perch:content id="readingYear" type="text" label="Year" required="true" title="true" />). <perch:content id="readingTitle" type="text" label="Title" required="true" title="true" />.</p>
-  <p class="project-date"><i>NOTE: <perch:content id="readingNotes" type="textarea" label="Notes" title="true" /></i></p>
+  <p><perch:content id="readingAuthor" type="text" label="Author(s)" required="true" title="true" />. (<perch:content id="readingYear" type="text" label="Year" required="true" title="true" />).
+    <perch:if exists="readingLink"><a href="<perch:content id="readingLink" type="text" label="Article Link" />"></perch:if>
+  <perch:content id="readingTitle" type="text" label="Title" required="true" title="true" /><perch:if exists="readingLink"></a></perch:if>.</p>
+
+  <perch:if exists="readingNotes"><p class="project-date"><em>NOTE: <perch:content id="readingNotes" type="textarea" label="Notes" title="true" /></em></p></perch:if>
 </li>
