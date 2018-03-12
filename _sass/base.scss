@@ -268,3 +268,9 @@ nav {
 .bottom-small {
   margin-bottom: 0;
 }
+
+.cat-tag {
+  color: lighten($bodyText, 20%);
+  font-size: .6em;
+  text-transform: uppercase;
+}

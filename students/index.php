@@ -20,7 +20,7 @@
       <h1>Readings</h1>
       <ul>
         <?php if (perch_member_has_tag('student')) {
-          perch_content('Readings');
+          perch_content('Readings2');
         };
         ?>
       </ul>
