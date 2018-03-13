@@ -2,14 +2,14 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
-  'title' => 'Freeform Printing: Part 2',
+  'title' => 'Robotic Panels',
 ]); ?>
 <body>
   <?php perch_layout('global.header'); ?>
   <main>
     <div class="project-article">
-      <h1>Freeform Printing: Part 2</h1>
-        <?php perch_content('Freeform Printing'); ?>
+      <h1>AR On Site</h1>
+        <?php perch_content('AR On Site'); ?>
     </div>
   </main>
   <?php perch_layout('global.footer'); ?>

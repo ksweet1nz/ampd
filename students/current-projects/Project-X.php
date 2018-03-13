@@ -9,8 +9,7 @@
   <main>
     <div class="project-article">
       <h1>Project X</h1>
-
-    </div>
+        <?php perch_content('Project X'); ?>    </div>
   </main>
   <?php perch_layout('global.footer'); ?>
   </div>

@@ -9,7 +9,7 @@
   <main>
     <div class="project-article">
       <h1>Robotic Joints</h1>
-
+        <?php perch_content('Robot Joints'); ?>
     </div>
   </main>
   <?php perch_layout('global.footer'); ?>
