@@ -42,10 +42,11 @@ body {
   font-family: $mainFont;
   background: $white;
   color: $bodyText;
+  background: url("../images/blu-stripes.png") repeat;
 }
 main {
   margin: 0 15%;
-  padding-top: 16vh;
+  padding-top: 4vh;
 }
 @media only screen and (max-width: 798px) {
   main {
@@ -63,6 +64,7 @@ main > img {
 footer {
   font-size: .8em;
   text-align: center;
+  background: $offWhite;
 }
 
 fieldset {
@@ -79,17 +81,19 @@ legend {
 // navigation
 .navigation {
   height: 10vh;
+  background-color: $bodyText;
 }
 .nav-container {
   margin: 0 auto;
 }
 .brand {
   position: absolute;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 20px;
 }
 nav {
   float: right;
+  padding-top: 2vh;
   ul {
     list-style: none;
     margin: 0;
@@ -97,18 +101,17 @@ nav {
     li {
       float: left;
       position: relative;
-      color: $bodyText;
+      color: $offWhite;
       font-size: 1.5em;
       a,
       a:visited {
         display: block;
         padding: 0 20px;
         line-height: $nav-height;
-        color: $bodyText;
+        color: $offWhite;
         text-decoration: none;
-        border: 8px solid $white;
         &:hover {
-          border: 8px solid $nav-font-color;
+          border-top: 4px solid lighten($popColor, 5%);
         }
         &:not(:only-child):after {
           padding-left: 4px;
@@ -129,8 +132,14 @@ nav {
   position: absolute;
   z-index: 1;
   display: none;
+  background-color: $offWhite;
+  box-shadow: 1px 1px 3px lighten($nav-font-color, 10%);
   li {
     font-size: .8em;
+    a, a:visited {
+    color: $bodyText;
+    border-bottom: 4px solid $offWhite;
+    }
   }
 }
 .nav-mobile {
@@ -152,6 +161,7 @@ nav {
     padding: $nav-height 0 15px;
     ul {
       display: none;
+      margin-top: 50px;
       li {
         float: none;
         a {
@@ -167,6 +177,7 @@ nav {
   }
   .nav-dropdown {
     position: static;
+    display: block;
   }
 }
 @media screen and (min-width: $breakpoint) {
@@ -176,7 +187,7 @@ nav {
 }
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 0px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -187,7 +198,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $nav-font-color;
+    background: $offWhite;
     position: absolute;
     display: block;
     content: '';
@@ -215,12 +226,14 @@ nav {
 }
 // Project Page
 .project-article {
-  border: 8px solid $nav-font-color;
+  border: 4px solid $nav-font-color;
+  border-radius: 50px;
   padding: 20px 40px;
   margin-bottom: 6em;
   box-shadow: 2px 3px 6px lighten($nav-font-color, 30%);
   display: inline-block;
   width: 100%;
+  background: $offWhite;
 }
 .project-article p, h2, h3 {
   margin: 0;
