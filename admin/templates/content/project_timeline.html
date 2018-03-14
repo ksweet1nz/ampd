@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Milestone</th>
+        <th>Progress</th>
+      </tr>
+    </thead>
+    <tbody>
+      <perch:repeater id="table_data" label="Table Data">
+      <tr>
+        <td class="col-1"><perch:content id="dateMilestone" type="date" label="Date" format="d F Y" /></td>
+        <td><perch:content id="taskMilestone" type="text" label="Task" /></td>
+        <td class="col-3"><perch:content id="progressMilestone" type="text" label="Progress" /></td>
+      </tr>
+      </perch:repeater>
+    </tbody>
+  </table>
+</div>

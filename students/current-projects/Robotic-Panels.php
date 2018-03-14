@@ -7,10 +7,11 @@
 <body>
   <?php perch_layout('global.header'); ?>
   <main>
-    <div class="project-article">
+    <div class="project-article bottom-small">
       <h1>Robotic Panels</h1>
         <?php perch_content('Robot Panels'); ?>
     </div>
+    <?php perch_layout('member.nav'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
   </div>

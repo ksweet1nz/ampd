@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+.col-1 {
+  width: 24%;
+}
+
+.col-3 {
+  width: 15%;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}

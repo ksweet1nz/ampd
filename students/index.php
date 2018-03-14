@@ -16,7 +16,7 @@
         ?>
       </ul>
     </div>
-    <div class="project-article">
+    <div class="project-article bottom-small">
       <h1>Readings</h1>
       <ul>
         <?php if (perch_member_has_tag('student')) {
@@ -25,7 +25,7 @@
         ?>
       </ul>
     </div>
-
+    <?php perch_layout('member.nav'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
   </div>

@@ -7,7 +7,7 @@
 <body>
   <?php perch_layout('global.header'); ?>
   <main>
-    <div class="project-article">
+    <div class="project-article bottom-small">
       <h1>Current Projects</h1>
       <ul>
         <?php
@@ -18,6 +18,7 @@
         ?>
       </ul>
     </div>
+    <?php perch_layout('member.nav'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
   </div>
