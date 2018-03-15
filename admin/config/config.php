@@ -10,7 +10,7 @@
     define("PERCH_DB_USERNAME", 'user');
     define("PERCH_DB_PASSWORD", 'password');
     define("PERCH_DB_SERVER", "localhost");
-    define("PERCH_DB_DATABASE", "ampd2");
+    define("PERCH_DB_DATABASE", "ampd");
     define("PERCH_DB_PREFIX", "perch3_");
 
     define('PERCH_TZ', 'UTC');

@@ -19,8 +19,3 @@ main {
 footer {
   grid-area: footer;
 }
-
-.two-col {
-  display: grid;
-  grid-template-columns: 70% 1fr;
-}

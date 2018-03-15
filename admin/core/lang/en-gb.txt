@@ -405,5 +405,6 @@
     "Editing \u2018%s\u2019 Category": "Editing \u2018%s\u2019 Category",
     "New sub-category": "New sub-category",
     "The template for this region (%s) cannot be found.": "The template for this region (%s) cannot be found.",
-    "Required": "Required"
+    "Required": "Required",
+    "Home page": "Home page"
 }
