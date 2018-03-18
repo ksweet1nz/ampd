@@ -7,4 +7,11 @@
   <p class="project-date"><i>Duration:</i> <perch:content id="duration" label="Project Duration" /></p>
   <p class="project-keywords"><perch:content id="keywords" label="Keywords" /></p>
   <perch:content id="body" type="textarea" label="Body" markdown="true" editor="simplemde" required="true" imagewidth="800" />
+
+  <perch:repeater id="videos" label="Videos">
+    <div class="intrinsic-container intrinsic-container-16x9">
+    <perch:content id="video" type="youtube" label="YouTube URL" output="embed" />
+    </div>
+  </perch:repeater>
+
 </article>

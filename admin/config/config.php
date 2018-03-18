@@ -1,12 +1,6 @@
 <?php
     define('PERCH_LICENSE_KEY', 'P31802-VSN057-KUK686-NJD137-URM027');
 
-
-    /* define("PERCH_DB_USERNAME", 'sweetsqu_ksweet');
-    define("PERCH_DB_PASSWORD", 'AcademiaV63030');
-    define("PERCH_DB_SERVER", "localhost");
-    define("PERCH_DB_DATABASE", "sweetsqu_ampd"); */
-
     define("PERCH_DB_USERNAME", 'user');
     define("PERCH_DB_PASSWORD", 'password');
     define("PERCH_DB_SERVER", "localhost");
@@ -27,4 +21,5 @@
 
     define('PERCH_HTML5', true);
     define('PERCH_TEMPLATE_FILTERS', true);
+    define('PERCH_YOUTUBE_API_KEY', 'AIzaSyAaceebNTeeb0TdHQDzjPJy20e5Cxr4At4');
     // define('PERCH_DEBUG', true);
