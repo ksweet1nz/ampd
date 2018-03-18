@@ -27,3 +27,4 @@
 
     define('PERCH_HTML5', true);
     define('PERCH_TEMPLATE_FILTERS', true);
+    // define('PERCH_DEBUG', true);

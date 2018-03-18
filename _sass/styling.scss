@@ -48,4 +48,19 @@
   color: lighten($bodyText, 20%);
   font-size: .6em;
   text-transform: uppercase;
+  padding-right: 3em;
+}
+
+.categories {
+      ul {
+        li {
+          float: left;
+          padding-right: 2em;
+          font-size: .7em;
+          text-transform: uppercase;
+        }
+      }
+}
+.readings {
+  clear: both;
 }

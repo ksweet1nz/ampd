@@ -406,5 +406,9 @@
     "New sub-category": "New sub-category",
     "The template for this region (%s) cannot be found.": "The template for this region (%s) cannot be found.",
     "Required": "Required",
-    "Home page": "Home page"
+    "Home page": "Home page",
+    "Your set has been successfully edited. Return to %scategory listing%s": "Your set has been successfully edited. Return to %scategory listing%s",
+    "Reorder Categories": "Reorder Categories",
+    "Reordering Categories": "Reordering Categories",
+    "Drag and drop the categories to reorder them.": "Drag and drop the categories to reorder them."
 }
