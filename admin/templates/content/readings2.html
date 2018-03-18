@@ -2,7 +2,7 @@
 <ul>
 </perch:before>
   <li>
-    <p><perch:content id="readingCitation" type="textarea" label="Citation" markdown="true" required="true" title="true" /></p>
+    <perch:content id="readingCitation" type="textarea" label="Citation" markdown="true" required="true" title="true" />
     <perch:categories id="readingType" label="Reading Category" set="Readings" display-as="checkboxes" required="true" />
     <span class="cat-tag"><perch:category id="catTitle" type="text" />  </span></perch:categories>
     <perch:if exists="readingNotes"><p class="project-date"><em>NOTE: <perch:content id="readingNotes" type="textarea" label="Notes" title="true" /></em></p></perch:if>
