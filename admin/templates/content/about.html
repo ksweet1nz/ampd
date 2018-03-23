@@ -1,0 +1,20 @@
+  <h1 class="project-title"><perch:content id="pageTitle" type="text" label="Page Ttitle" required="true" title="true" /></h2>
+  <perch:content id="abouttext" type="textarea" label="About Text" markdown="true" editor="markitup" required="true" />
+  <div class="about-items">
+    <h1 class="project-title">Facilities</h1>
+    <perch:repeater id="assets" label="Assets">
+      <perch:if exists="assetImage"><img src="<perch:content id="assetImage" type="image" label="Asset Image" />" alt="<perch:content id="assetalt" type="text" label="Alt text" />" /></perch:if>
+      <h3><perch:content id="facilityAsset" label="Facility Asset" /></h3>
+      <perch:content id="assetDescription" type="textarea" label="Description" markdown="true" editor="markitup" required="true" />
+    </perch:repeater>
+  </div>
+  <div class="about-items">
+    <h1 class="project-title">Staff</h1>
+    <perch:repeater id="staff" label="Staff">
+      <perch:if exists="staffImage"><img src="<perch:content id="staffImage" type="image" label="Staff Image" />" alt="<perch:content id="staffalt" type="text" label="Alt text" />" /></perch:if>
+      <h2><perch:content id="staffName" label="Full Name" required="true" /></h2>
+      <h3><perch:content id="staffTitle" label="Title" required="true" /></h3>
+      <perch:content id="staffBio" type="textarea" label="Bio" markdown="true" editor="simplemde" required="true" />
+      <br />
+    </perch:repeater>
+  </div>
