@@ -1,4 +1,9 @@
 <?php include('admin/runtime.php'); ?>
+<?php
+  $bg = array('RobotClip_01.mp4','RobotClip_02.mp4','RobotClip_03.mp4' );
+  $i = rand(0, count($bg)-1);
+  $selectedBg = "$bg[$i]";
+ ?>
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
@@ -10,7 +15,7 @@
   <div id="videoDiv">
     <div id="videoBlock">
       <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-        <source src="images/RobotVideo2.mp4" type="video/mp4"></source>
+        <source src="images/<?php echo $selectedBg ?>" type="video/mp4"></source>
       </video>
       <div id="videoMessage">
         <?php perch_content('Banner'); ?>
