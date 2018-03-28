@@ -7,7 +7,7 @@
 <body>
   <?php perch_layout('global.header'); ?>
   <main>
-    <?php perch_content('Content'); ?>
+    <?php perch_content('About'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
 </body>
