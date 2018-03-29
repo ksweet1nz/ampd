@@ -10,20 +10,15 @@ class PerchMembers_Template extends PerchAPI_TemplateHandler
 	{
 		if (strpos($contents, 'perch:member')!==false) {
             
-            //PerchUtil::debug(PerchUtil::html($contents));
-
 			$Session = PerchMembers_Session::fetch();
 			$this->Session = $Session;
-
 		
 			// CONTENT
 	    	$contents 	= $Template->replace_content_tags('member', $Session->to_array(), $contents);
 
-
 	    	// Clean up
-	    	$s 			= '/<perch:member\s[^>]*\/>/';
+	    	$s 			= '/<perch:member\s[^>]*>/';
 			$contents	= preg_replace($s, '', $contents);
-
 
 			// CONDITIONALS
 			$content_vars   = array('foo'=>'bar');
@@ -94,7 +89,7 @@ class PerchMembers_Template extends PerchAPI_TemplateHandler
 
 			default:
 				if (strpos($condition_contents, 'perch:else:member')>0) {
-					$condition_contents = preg_replace('/<perch:else:member\s*\/>/', '', $condition_contents);
+					$condition_contents = preg_replace('/<perch:else:member(\s*\/){0,1}>/', '', $condition_contents);
 				}
 				$template_contents  = str_replace($exact_match, $condition_contents, $template_contents);
 				

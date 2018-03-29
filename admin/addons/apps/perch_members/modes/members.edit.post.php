@@ -42,6 +42,7 @@
 
         echo $HTML->heading2('Tags');
 ?>
+    <div class="form-inner">
         <table class="tags">
             <thead>
                 <tr>
@@ -72,7 +73,7 @@
 
             </tbody>
         </table>
-
+    </div>
 
 <?php
         }// is object Member

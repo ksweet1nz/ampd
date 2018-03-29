@@ -174,6 +174,11 @@ class PerchForms_Form extends PerchAPI_Base
                 }
             }
         }
+
+        if (!$spam) {
+            $Perch = Perch::fetch();
+            $Perch->event('perch_forms.received', $data);
+        }
         
         // Redirect?
         if (isset($opts->successURL) && $opts->successURL) {

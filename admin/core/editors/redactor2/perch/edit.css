@@ -36,22 +36,6 @@ body #redactor-modal-overlay {
 	z-index: 1056;
 }
 
-html body .editor-wrap .redactor-box.redactor-styles-on,
-html body .editor-wrap .redactor-box .redactor-toolbar {
+html body .redactor-toolbar {
 	z-index: 2;
-	padding: 5px 5px 0 5px;
-}
-
-html body .editor-wrap div.redactor-styles {
-	padding: 5px;
-}
-
-.redactor-air a.re-button-icon, 
-.redactor-toolbar a.re-button-icon {
-	padding: 6px 9px 4px 9px;
-}
-
-.redactor-focus.redactor-styles-on, 
-.redactor-focus:focus.redactor-styles-on {
-	border-color: #486660;
 }
