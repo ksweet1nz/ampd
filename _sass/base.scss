@@ -63,8 +63,9 @@ main > img {
 
 footer {
   font-size: .8em;
+  color: $offWhite;
   text-align: center;
-  background: $offWhite;
+  background: lighten($bodyText, 10%);
 }
 
 fieldset {
