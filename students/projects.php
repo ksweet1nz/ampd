@@ -5,22 +5,23 @@
   'title' => 'Student Projects',
 ]); ?>
 <body>
-  <?php perch_layout('global.header'); ?>
-  <main>
-    <div class="project-article bottom-small">
-      <h1>Current Projects</h1>
-      <ul>
-        <?php
-         perch_content_custom('Projects',[
-            'page' => '/projects/index.php',
-            'template' => 'current_projects.html',
-          ]);
-        ?>
-      </ul>
-    </div>
-    <?php perch_layout('member.nav'); ?>
-  </main>
-  <?php perch_layout('global.footer'); ?>
+  <div class="container">
+  	<?php perch_layout('member.header'); ?>
+    <main>
+      <div class="member-article">
+        <h1>Current Projects</h1>
+        <?php perch_content('Current Projects'); ?>
+        <ul>
+          <?php
+           perch_content_custom('Projects',[
+              'page' => '/projects/index.php',
+              'template' => 'current_projects.html',
+            ]);
+          ?>
+        </ul>
+      </div>
+    </main>
+    <?php perch_layout('global.footer'); ?>
   </div>
 </body>
 </html>

@@ -380,5 +380,12 @@
     "An update is available for %s. You have %s and the current version is %s": "An update is available for %s. You have %s and the current version is %s",
     "Menu successfully rebuilt": "Menu successfully rebuilt",
     "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:": "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:",
-    "Do that now, then reload this page. Don't use %scarbonara%s.": "Do that now, then reload this page. Don't use %scarbonara%s."
+    "Do that now, then reload this page. Don't use %scarbonara%s.": "Do that now, then reload this page. Don't use %scarbonara%s.",
+    "Subpage folder": "Subpage folder",
+    "Sorry, there's currently no content available based on that filter": "Sorry, there's currently no content available based on that filter",
+    "View all": "View all",
+    "Move the page to this location": "Move the page to this location",
+    "Reordering pages": "Reordering pages",
+    "Drag and drop the pages to reorder them.": "Drag and drop the pages to reorder them.",
+    "Page orders successfully updated.": "Page orders successfully updated."
 }

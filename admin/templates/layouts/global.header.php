@@ -13,8 +13,8 @@
       <li><a href="#!">About</a>
         <ul class="nav-dropdown">
           <li><a href="/about/">Facilities</a></li>
-          <li><a href="#!">Partners</a></li>
           <li><a href="/about/contact.php">Contact</a></li>
+          <li><a href="/about/inspiration.php">Inspiration</a></li>
         </ul>
       </li>
       <li><a href="#!">Projects</a>

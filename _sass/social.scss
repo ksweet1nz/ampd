@@ -1,19 +1,18 @@
 @font-face {
-    font-family: 'si';
-    src: url('/icons/socicon.eot');
-    src: url('/icons/socicon.eot?#iefix') format('embedded-opentype'),
-         url('/icons/socicon.woff') format('woff'),
-         url('/icons/socicon.ttf') format('truetype'),
-         url('/icons/socicon.svg#icomoonregular') format('svg');
+    font-family: "si";
+    src: url("../icons/socicon.eot");
+    src: url("../icons/socicon.eot?#iefix") format('embedded-opentype');
+    src: url("../icons/socicon.woff") format("woff");
+    src: url('../icons/socicon.ttf') format('truetype');
+    src: url('../icons/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family:si;
-        src: url(/icons/socicon.svg) format(svg);
+        src: url(../icons/socicon.svg) format(svg);
     }
 }
 
@@ -34,12 +33,6 @@
     font-family:si!important;
     font-style:normal;
     font-weight:400;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -ms-box-sizing:border-box;
-    -o-box-sizing:border-box;
     box-sizing:border-box;
 
     -o-transition:.1s;
@@ -47,9 +40,7 @@
     -moz-transition:.1s;
     -webkit-transition:.1s;
     transition:.1s;
-    -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0);
 
     overflow:hidden;
@@ -62,8 +53,6 @@
     height: 42px;
     line-height: 42px;
     font-size: 23px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
     border-radius: 100px;
     margin-right: 10px;
     color: #fefdf7;
@@ -72,7 +61,6 @@
 
 .soc a:hover {
     z-index: 2;
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 

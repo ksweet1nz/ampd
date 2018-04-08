@@ -13,7 +13,9 @@
     z-index: -1;
     }
 }
-
+.project-article h2 {
+  margin-bottom: 0;
+}
 .project-article h3 {
   font-size: .85em;
   font-weight: 100;
@@ -26,9 +28,13 @@
 }
 .project-keywords {
   text-transform: uppercase;
+  font-size: .7em;
 }
 .blog-date {
   text-align: right;
+  padding-top: 1em;
+  display: inline-block;
+  float: right;
 }
 .blog-category {
   float: right;
@@ -44,30 +50,7 @@
 .bottom-small {
   margin-bottom: 0;
 }
-.cat-tag {
-  color: lighten($bodyText, 20%);
-  font-size: .6em;
-  text-transform: uppercase;
-  padding-right: 1em;
-}
 
-.categories {
-      ul {
-        li {
-          float: left;
-          padding-right: 1.25em;
-          font-size: .7em;
-          text-transform: uppercase;
-        }
-      }
-}
-.readings {
-  clear: both;
-  p {
-    margin-bottom: 0;
-    margin-top: 2em;
-  }
-}
 
 .about-items {
   clear: both;
