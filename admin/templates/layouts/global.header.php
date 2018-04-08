@@ -1,7 +1,7 @@
 <header class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <a href="/"><?php perch_layout('global.logo'); ?></a>
+      <a href="/"><img src="/images/AMPDBannerLogo.svg" /></a>
     </div>
   </div>
   <nav>
