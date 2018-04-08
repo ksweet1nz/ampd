@@ -1,18 +1,19 @@
 @font-face {
-    font-family: "si";
-    src: url("../icons/socicon.eot");
-    src: url("../icons/socicon.eot?#iefix") format('embedded-opentype');
-    src: url("../icons/socicon.woff") format("woff");
-    src: url('../icons/socicon.ttf') format('truetype');
-    src: url('../icons/socicon.svg#icomoonregular') format('svg');
+    font-family: 'si';
+    src: url('/icons/socicon.eot');
+    src: url('/icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('/icons/socicon.woff') format('woff'),
+         url('/icons/socicon.ttf') format('truetype'),
+         url('/icons/socicon.svg#icomoonregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family:si;
-        src: url(../icons/socicon.svg) format(svg);
+        src: url(/icons/socicon.svg) format(svg);
     }
 }
 

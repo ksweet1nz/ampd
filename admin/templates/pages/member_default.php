@@ -2,15 +2,16 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
-  'title' => 'Page Title',
+  'title' => 'Projects',
 ]); ?>
 <body>
   <div class="container">
-    <?php perch_layout('global.header'); ?>
+  	<?php perch_layout('member.header'); ?>
     <main>
-      <h1><?php perch_content('Main Heading'); ?></h1>
+      <h1><?php perch_content('Member Page Heading'); ?></h1>
     </main>
     <?php perch_layout('global.footer'); ?>
   </div>
+</body>
 </body>
 </html>
