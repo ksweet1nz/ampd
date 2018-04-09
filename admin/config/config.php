@@ -22,4 +22,4 @@
     define('PERCH_HTML5', true);
     define('PERCH_TEMPLATE_FILTERS', true);
     define('PERCH_YOUTUBE_API_KEY', 'AIzaSyAaceebNTeeb0TdHQDzjPJy20e5Cxr4At4');
-    // define('PERCH_DEBUG', true);
+    //define('PERCH_DEBUG', true);

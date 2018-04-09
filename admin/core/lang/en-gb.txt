@@ -396,5 +396,6 @@
     "Group Options": "Group Options",
     "Editing navigation group": "Editing navigation group",
     "Editing \u2018%s\u2019 Navigation Group": "Editing \u2018%s\u2019 Navigation Group",
-    "Reordering navigation group": "Reordering navigation group"
+    "Reordering navigation group": "Reordering navigation group",
+    "Template tag ID \u2018%s\u2019 contains disallowed characters": "Template tag ID \u2018%s\u2019 contains disallowed characters"
 }
