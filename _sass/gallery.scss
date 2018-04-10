@@ -16,10 +16,10 @@
 .gallery-link {
   float: right;
   background: $popColor;
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   margin-right: 2em;
-  border: 1px solid $bodyText;
+  border: 2px solid $bodyText;
   border-radius: 10px;
   text-align: center;
   line-height: normal;
@@ -31,12 +31,13 @@
     img {
       width: 70%;
       height: auto;
-      filter: invert(95%);
-      margin-top: 1em;
+      margin-top: .75em;
     }
   }
 }
 
 .gallery-link:hover {
-  background: rgba($popColor, .7);
+  background: rgba($popColor, .8);
+  transform-origin: center;
+  transform: scale(.95, .95);
 }
