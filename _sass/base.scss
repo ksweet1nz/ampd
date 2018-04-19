@@ -65,7 +65,7 @@ footer {
   font-size: .8em;
   color: $offWhite;
   text-align: center;
-  background: lighten($bodyText, 10%);
+  background: $bodyText;
 }
 
 fieldset {
