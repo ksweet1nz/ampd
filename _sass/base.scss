@@ -48,7 +48,7 @@ main {
   margin: 0 15%;
   padding-top: 4vh;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: $breakpoint) {
   main {
     margin: 0 3%;
   }

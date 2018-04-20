@@ -19,3 +19,19 @@ main {
 footer {
   grid-area: footer;
 }
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+main.home-grid {
+  margin: 0 5%;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
