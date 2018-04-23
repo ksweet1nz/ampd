@@ -16,6 +16,7 @@
       <ul class="nav-dropdown">
         <li><a href="/projects/">Current</a></li>
         <li><a href="/projects/archive.php">Archive</a></li>
+        <li><a href="/projects/inspiration.php">Inspiration</a></li>
       </ul>
     </li>
     <li><a href="/members/">Members</a></li>

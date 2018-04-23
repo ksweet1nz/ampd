@@ -1,0 +1,13 @@
+<article class="project-article">
+  <h1 class="project-title"><perch:content id="inspirationName" type="text" label="Project Name" required="true" title="true"></h2>
+    <div class="intrinsic-container intrinsic-container-16x9">
+    <perch:if exists="youtubeVideo">
+      <perch:content id="youtubeVideo" type="youtube" label="YouTube URL" output="embed" />
+    </perch:if>
+    <perch:if exists="vimeoVideo">
+      <perch:content id="vimeoVideo" type="vimeo" label="Vimeo URL" output="embed" />
+    </perch:if>
+    <perch:if exists="inspirationDesc">
+      <p><perch:content id="inspirationDesc" type="textarea" label="Description"></p>
+    </perch:if>
+</article>
