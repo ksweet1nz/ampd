@@ -1,0 +1,7 @@
+<div class="about-items">
+    <h2><perch:content id="staffName" label="Full Name" required="true" title="true" suppress="true" /></h2>
+    <perch:if exists="staffImage"><img src="<perch:content id="staffImage" type="image" label="Staff Image" />" alt="<perch:content id="staffalt" type="text" label="Alt text" />" /></perch:if>
+    <h2><perch:content id="staffName" label="Full Name" required="true" /></h2>
+    <h3><perch:content id="staffTitle" label="Title" required="true" /></h3>
+    <perch:content id="staffBio" type="textarea" label="Bio" markdown="true" editor="simplemde" required="true" />
+</div>

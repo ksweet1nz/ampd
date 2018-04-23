@@ -1,0 +1,5 @@
+  <div class="about-items">
+    <h2 class="project-title"><perch:content id="assetTitle" type="text" label="Asset" required="true" title="true" /></h2>
+    <perch:if exists="assetImage"><img src="<perch:content id="assetImage" type="image" label="Asset Image" />" alt="<perch:content id="assetalt" type="text" label="Alt text" />" /></perch:if>
+    <perch:content id="assetDescription" type="textarea" label="Description" markdown="true" editor="markitup" required="true" />
+  </div>

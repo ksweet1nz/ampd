@@ -2,12 +2,13 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global.head', [
-  'title' => 'Inspiration',
+  'title' => 'Researchers',
 ]); ?>
 <body>
   <?php perch_layout('global.header'); ?>
   <main>
-      <h1>Projects We Like</h1>
+      <h1>AMPD Researchers</h1>
+      <?php perch_content('Researchers'); ?>
   </main>
   <?php perch_layout('global.footer'); ?>
 </body>
