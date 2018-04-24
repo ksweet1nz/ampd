@@ -281,7 +281,7 @@ class PerchTemplate
 		return $content;
 	}
 
-	public function replace_content_tags($namespace, $content_vars, $contents)
+	public function replace_content_tags($namespace, $content_vars, $contents, $onlyTagsWithIds = false)
 	{
 		if (is_array($content_vars)) {
 
@@ -293,6 +293,12 @@ class PerchTemplate
 				foreach($matches as $match) {
 					$match = $match[0];
 					$tag   = new PerchXMLTag($match);
+
+					if ($onlyTagsWithIds) {
+						if (!$tag->id()) {
+							continue;
+						}
+					}
 
 					if ($tag->suppress) {
 						$contents = str_replace($match, '', $contents);
@@ -679,14 +685,14 @@ class PerchTemplate
 
 	public function find_all_tag_ids($type='content', $contents = null)
 	{
-
 		if ($contents === null) {
 			$contents	= $this->load();	
 		}
 	    
 		$out = [];
 
-		$s = '/<perch:'.$type.'[^>]*id="(.*?)"[^>]*>/';
+		$s = '/<perch:'.$type.'[^>]*?id="(.*?)"[^>]*>/';
+
 		$count	= preg_match_all($s, $contents, $matches, PREG_SET_ORDER);
 		if ($count && PerchUtil::count($matches)) {
 			foreach($matches as $match) {
@@ -1942,7 +1948,7 @@ class PerchTemplate
 
     	//PerchUtil::debug(PerchUtil::html($exact_match), 'success');
  
-    	$ids = $this->find_all_tag_ids('', $condition_contents);
+    	$ids = $this->find_all_tag_ids(null, $condition_contents);
 
     	$Group = new StdClass();
     	$Group->tag = $OpeningTag;
