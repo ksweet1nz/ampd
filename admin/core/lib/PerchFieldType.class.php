@@ -225,6 +225,8 @@ class PerchFieldType
     {
         $id = $this->Tag->id();
 
+        if (!PerchUtil::count($details)) return '';
+
         if (array_key_exists($id, $details)) {
             $raw = $details[$id];
             $value = '';

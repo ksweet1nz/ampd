@@ -12,18 +12,19 @@ class PerchMembers_Template extends PerchAPI_TemplateHandler
             
 			$Session = PerchMembers_Session::fetch();
 			$this->Session = $Session;
-		
-			// CONTENT
-	    	$contents 	= $Template->replace_content_tags('member', $Session->to_array(), $contents);
 
-	    	// Clean up
-	    	$s 			= '/<perch:member\s[^>]*>/';
-			$contents	= preg_replace($s, '', $contents);
+			// CONTENT
+	    	$contents 	= $Template->replace_content_tags('member', $Session->to_array(), $contents, true);
 
 			// CONDITIONALS
 			$content_vars   = array('foo'=>'bar');
 			$index_in_group = 0;
 			$contents       = $this->parse_paired_tags('member', false, $contents, $content_vars, $index_in_group, 'parse_conditional');
+		
+
+			// Clean up
+	    	$s 			= '/<perch:member[^>]*>/';
+			$contents	= preg_replace($s, '', $contents);
 
         }
 
@@ -34,8 +35,9 @@ class PerchMembers_Template extends PerchAPI_TemplateHandler
 	{
 		$Tag = new PerchXMLTag($opening_tag);
 
-		//PerchUtil::debug($Tag);
-		//PerchUtil::debug(PerchUtil::html($condition_contents));
+		PerchUtil::debug(PerchUtil::html($opening_tag));
+		PerchUtil::debug($Tag);
+		PerchUtil::debug(PerchUtil::html($condition_contents));
 
 		$type = false;
 
@@ -56,7 +58,7 @@ class PerchMembers_Template extends PerchAPI_TemplateHandler
         	        
         // else condition
         if (strpos($condition_contents, 'perch:else:member')>0) {
-	        $parts   = preg_split('/<perch:else:member\s*\/>/', $condition_contents);
+	        $parts   = preg_split('/<perch:else:member[^>]*>/', $condition_contents);
             if (is_array($parts) && count($parts)>1) {
                 $positive = $parts[0];
                 $negative = $parts[1];

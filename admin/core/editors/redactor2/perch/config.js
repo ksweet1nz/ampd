@@ -58,7 +58,7 @@ jQuery(function() {
 				plugins: ['perchassets']
 			};
 
-		jQuery('textarea.redactor:not([data-init])').each(function(i,o){
+		jQuery('textarea.redactor2:not([data-init])').each(function(i,o){
 			var self = $(o);
 
 			if (!self.parents('.spare').length) {

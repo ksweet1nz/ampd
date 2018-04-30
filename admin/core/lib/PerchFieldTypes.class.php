@@ -40,7 +40,7 @@ class PerchFieldTypes
             if (!in_array($classname, self::$_seen)) {
                 $Perch = Perch::fetch();
                 if ($Perch->admin) {
-                    if (count($all_tags)) $r->set_sibling_tags($all_tags);
+                    if (PerchUtil::count($all_tags)) $r->set_sibling_tags($all_tags);
                     $r->add_page_resources();
                 }
 
@@ -309,6 +309,8 @@ class PerchFieldType_date extends PerchFieldType
 
     public function get_content_summary($details=array(), $Template)
     {
+        if (!PerchUtil::count($details)) return '';
+
         $value = parent::get_content_summary($details, $Template);
         $value = $Template->format_value($this->Tag, $value);
         
@@ -355,6 +357,8 @@ class PerchFieldType_time extends PerchFieldType
 
     public function get_content_summary($details=array(), $Template)
     {
+        if (!PerchUtil::count($details)) return '';
+
         $value = parent::get_content_summary($details, $Template);
         $value = $Template->format_value($this->Tag, $value);
         
@@ -573,7 +577,7 @@ class PerchFieldType_slug extends PerchFieldType
 class PerchFieldType_textarea extends PerchFieldType
 {   
     public $hints_before = true;
-    private $native_editors = ['markitup', 'redactor', 'simplemde'];
+    private $native_editors = ['markitup', 'redactor', 'redactor2', 'simplemde'];
 
     public function add_page_resources()
     {
@@ -694,6 +698,12 @@ class PerchFieldType_textarea extends PerchFieldType
         $id = $this->Tag->id();
         if (isset($post[$id])) {
             $raw = trim($post[$id]);
+
+            // Redactor 3 craziness
+            if ($raw && $this->Tag->editor()==='redactor' && $raw === '<p><br></p>') {
+                $raw = '';
+            }
+            // End Redactor 3 craziness
 
             $raw = PerchUtil::safe_stripslashes($raw);
             $value = $raw;
@@ -904,6 +914,8 @@ class PerchFieldType_select extends PerchFieldType
 
     public function get_content_summary($details=array(), $Template)
     {
+        if (!PerchUtil::count($details)) return '';
+
         $value = parent::get_content_summary($details, $Template);
         
         $opts_str = $this->Tag->options();
@@ -1733,6 +1745,8 @@ class PerchFieldType_image extends PerchFieldType
     public function get_content_summary($details=array(), $Template)
     {
         $id = $this->Tag->input_id();
+
+        if (!PerchUtil::count($details)) return '';
 
         if (array_key_exists($id, $details)) {
             $raw = $details[$id];
@@ -2709,6 +2723,8 @@ class PerchFieldType_category extends PerchFieldType
     {
         $id = $this->Tag->id();
 
+        if (!PerchUtil::count($details)) return '';
+
         if (array_key_exists($id, $details)) {
             $raw   = $details[$id];
             if (is_array($raw) && count($raw)) {
@@ -2878,6 +2894,8 @@ class PerchFieldType_related extends PerchFieldType
     public function get_content_summary($details=array(), $Template)
     {
         $id = $this->Tag->id();
+
+        if (!PerchUtil::count($details)) return '';
 
         if (array_key_exists($id, $details)) {
             $raw   = $details[$id];

@@ -158,7 +158,6 @@ if (PERCH_RUNWAY) {
 <?php
 
         if (is_array($tags)) {
-            PerchUtil::debug($tags, 'notice');
 
             // loop through each item (usually one, sometimes more)
             $i = 0;
