@@ -1,25 +1,25 @@
 #videoDiv {
-  position: relative;
-  margin-bottom: 5vh;
-  z-index: -1;
   border-bottom: 2em solid $bodyText;
+  margin-bottom: 5vh;
+  position: relative;
+  z-index: -1;
 }
 
 #videoBlock {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 #videoMessage {
-  width: 50%;
   position: absolute;
+  width: 50%;
 }
 
-#videoMessage *{
-  padding:0.4em; margin:0
+#videoMessage *{ margin:0;
+  padding:0.4em
 }
 
 
@@ -30,13 +30,13 @@ video {
 }
 
 iframe {
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
 }
 .intrinsic-container {
-  position: relative;
   height: 0;
   overflow: hidden;
+  position: relative;
 }
 
 /* 16x9 Aspect Ratio */
@@ -50,9 +50,9 @@ iframe {
 }
 
 .intrinsic-container iframe {
+  height: 100%;
+  left: 0;
   position: absolute;
   top:0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
