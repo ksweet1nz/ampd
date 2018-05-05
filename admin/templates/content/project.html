@@ -1,5 +1,5 @@
 <article class="project-article">
-  <h1 class="project-title"><perch:content id="projectName" type="text" label="Project Name" required="true" title="true" /></h2>
+  <h1 class="project-title" id="project<perch:content id="perch_item_index" type="hidden">"><perch:content id="projectName" type="text" label="Project Name" required="true" title="true" /></h2>
     <perch:content type="checkbox" id="hasgallery" value="1" label="Gallery?" suppress="true" />
     <perch:if exists="hasgallery">
       <perch:content id="albumSlug" type="text" label="Album Slug" suppress="true" />
