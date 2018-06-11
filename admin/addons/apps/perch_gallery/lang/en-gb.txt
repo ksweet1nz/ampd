@@ -123,5 +123,7 @@
     "Test Album": "Test Album",
     "": "",
     "Color Album": "Color Album",
-    "Think Machine": "Think Machine"
+    "Think Machine": "Think Machine",
+    "Robotic Panels": "Robotic Panels",
+    "Timber Joints": "Timber Joints"
 }
